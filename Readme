@@ -1,0 +1,24 @@
+BFGS-based Uncertainty Quantification, on 2D Elastic Marmousi
+
+Python 2.7.15
+
+1. python test_UQ.py 
+2. cd UQ_map
+   sh ps.sh
+
+Then, the UQ maps are ready there.
+
+If you want to look at the eigenvalues,
+
+(after python test_UQ.py)
+1. python plot_Eigen_values.py
+
+If you want to look at the eigenvectors,
+
+1. Comment out "sys.exit(0)" in test_UQ.py
+2. python test_UQ.py
+3. sh plot_all.sh
+
+Then, the E-vectors are within folders 001, 002, 003 ... to see.
+
+
