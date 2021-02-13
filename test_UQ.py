@@ -40,9 +40,6 @@ def apply(q, S, Y, LBFGS_mem):
 
 	r = q * np.load("precond0.npy")
 
-	sty = np.dot(Y[:,0], S[:,0])
-	yty = np.dot(Y[:,0], Y[:,0])
-
 	for ii in range(kk-1, -1, -1):
 		be = rh[ii]*np.dot(Y[:,ii], r)
 		r = r + S[:,ii]*(al[ii] - be)
